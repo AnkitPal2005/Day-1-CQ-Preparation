@@ -66,7 +66,6 @@ public:
         {
             Node<T> *temp = Head;
             Head = Head->next;
-            delete temp;
             return;
         }
 
@@ -86,7 +85,6 @@ public:
         }
 
         previous->next = current->next;
-        delete current;
     }
 
     
